@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(226, 234, 234);
+}
+
+h1{
+    text-align: center;
+    color:rgba(11, 11, 95, 0.886);
+    padding-top:100px;
+    font-size:60px;
+}
+form {
+   display:flex;
+   flex-direction:row;
+   justify-content: center;
+    margin-top:20px;   
+
+}
+form input {
+    padding:15px 200px;
+    outline: none;
+    background-color:rgb(147, 187, 203) ;
+    border:0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size:20px;
+    color:rgba(11, 11, 95, 0.886)
+}
+form input:hover{
+    border: 1px solid rgb(101, 137, 151)
+}
+form button{
+   padding:10px 25px;
+   background-color: rgba(18, 18, 134, 0.715);
+   border:0;
+   cursor:pointer;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius:10px;
+}
+form button:hover{
+    opacity:0.9
+}
+button i{
+    font-size:20px;
+    color:#FFF;
+
+}
+.todo-lists{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top:40px;
+}
+.todo-lists li{
+    background-color: aquamarine;
+    padding: 15px 450px 15px 30px;
+    font-size:20px;
+    color: rgba(11, 11, 95, 0.886);
+    background-color: rgb(134, 209, 173);
+    position: relative;
+    margin-bottom:20px;
+    border-radius:10px;
+    min-width:400px;
+    
+    
+
+}
+.todo-lists button{
+    padding:15px 20px;
+    cursor:pointer;
+   
+}
+.todo-lists button:hover{
+    opacity:0.9
+}
+.check{
+    background-color: rgb(48, 99, 48);
+    border:0;
+    position: absolute;
+    right:50px;
+    top:0
+}
+.cross{
+    background-color: red;
+    border:0;
+    position: absolute;
+    right:0;
+    top:0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.done{
+    text-decoration: line-through;
+    opacity: 0.5
+}
+.delete{
+    display:none;
+    transition: 0.8;
+}
